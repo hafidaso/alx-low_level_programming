@@ -7,12 +7,23 @@
  */
 
 void jack_bauer(void)
+{
+	int h = 0;
+	int s = 0;
 
-int hour, minute;
-
-    for (hour = 0; hour < 24; hour++) {
-        for (minute = 0; minute < 60; minute++) {
-            printf("%02d:%02d\n", hour, minute);
-        }
-    }
+	while (x <= 23)
+	{
+		s = 0;
+		while (s <= 59)
+		{
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((s / 10) + '0');
+			_putchar((s % 10) + '0');
+			_putchar('\n');
+			s += 1;
+		}
+		x += 1;
+	}
 }
