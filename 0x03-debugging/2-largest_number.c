@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 int largest_number() {
     int a, b, c, max;
