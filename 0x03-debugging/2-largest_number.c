@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int largest_number() {
     int a, b, c, max;
     
     printf("Enter three integers: ");
