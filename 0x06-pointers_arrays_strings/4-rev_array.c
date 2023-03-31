@@ -1,19 +1,24 @@
-/**
- *reverse_array - Reverse elements of an array
- *@a: Array to be reversed
- *@n: number of elements of the array
- *Return: Void
- */
-#include <stddef.h>
-void reverse_array(int *a, size_t n)
-{
-	int temp;
-	size_t i;
+#include "main.h"
 
-	for (i = 0; i < n / 2; i++)
+/**
+ * reverse_array - a function that print n elem of array
+ * @a: pointer variable
+ * @n: variable
+ * Return: void return nothing
+ */
+
+void reverse_array(int *a, int n)
+{
+	int i = 0;
+	int j = n - 1;
+	int  tmp;
+
+	while (i < j)
 	{
-		temp = a[i];
-		a[i] = a[n - i - 1];
-		a[n - i - 1] = temp;
+		tmp = a[i];
+		a[i] = a[j];
+		a[j] = tmp;
+		i++;
+		j--;
 	}
 }
