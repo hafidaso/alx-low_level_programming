@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- *int factorial(int n); - function that returns the factorial of a given number
- *@s: an array of pointers
+ * factorial - function that returns the factorial of a given number.
+ * @n: an array of pointers
  *Return: nothing void
  */
 
