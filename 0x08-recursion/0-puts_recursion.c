@@ -6,14 +6,14 @@
  *@s: an array of pointers
  *Return: nothing void
  */
- 
- void _puts_recursion(char *s) // base case: end of string
+
+void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		_putchar('\n'); // add a new line character
+		_putchar('\n');
 		return;
 	}
-	_putchar(*s); // print current character
-	_puts_recursion(s + 1); // recurse on the rest of the string
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
