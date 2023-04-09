@@ -2,10 +2,10 @@
 #include <unistd.h>
 
 /**
- * main - Prints the name of the program, followed by a new line.
- * @argc: int
- * @argv : list
- * Return: Always 0.
+ * main - The Function
+ * @c:  The variable
+ * @v: The Variable
+ * Return: The Return value/void
  */
 
 int main(int c, char **v)
