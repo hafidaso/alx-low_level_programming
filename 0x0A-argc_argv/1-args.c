@@ -2,15 +2,14 @@
 #include <unistd.h>
 
 /**
- * main -  program that prints the number of arguments passed into it
- * @argc: the number of command line arguments
- * @argv: an array of command line argument strings
- *
+ * main  - The Function
+ * @z:  The variable
+ * @v: The Var
  * Return: The Return value/void
  */
- 
-int main(int argc, char *argv[])
+
+int main(int z, char __attribute__((unused)) **v)
 {
-    printf("%d\n", argc - 1);
-    return (0);
+	printf("%d\n", z - 1);
+	return (0);
 }
