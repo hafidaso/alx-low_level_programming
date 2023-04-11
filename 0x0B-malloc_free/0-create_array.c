@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- * create_array - creates an array of chars, and initializes it with a specific char
+ * create_array - creates an array of chars
  * @size:  The variable
  * @c: char to initialize the array with
  * Return: The Return value/void
  */
- 
- char *create_array(unsigned int size, char c)
+
+char *create_array(unsigned int size, char c)
 {
     char *array;
 	unsigned int i;
