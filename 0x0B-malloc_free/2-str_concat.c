@@ -2,6 +2,21 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - The Function
+ * @s:  The variable
+ * Return: The Return value/void
+ */
+
+unsigned int _strlen(char *s)
+{
+	unsigned int i = 0;
+
+	while (s[i])
+		i++;
+	return (i);
+}
+
+/**
  * str_concat - concatenates two strings
  * @s1: first string
  * @s2: second string
