@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 fndef MAIN_H
+=======
+#ifndef MAIN_H
+>>>>>>> 1a49291ebc932114baef686a474f9be5432aadf6
 #define MAIN_H
 
 #include <stdio.h>
