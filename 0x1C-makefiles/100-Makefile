@@ -1,0 +1,42 @@
+# Compiler
+CC = gcc
+
+# Source files
+SRC = $(wildcard *.c)
+
+# Object files
+OBJ = $(SRC:.c=.o)
+
+# Executable name
+NAME = school
+
+# Cleanup program
+RM = /bin/rm -f
+
+# Compiler flags
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Main rule
+all: $(NAME)
+
+# Build the executable
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Generic rule for compiling source files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean Emacs, Vim, and executable files
+clean:
+	$(RM) *~ *# $(NAME)
+
+# Clean object files
+oclean:
+	$(RM) $(OBJ)
+
+# Clean Emacs, Vim, executable files, and object files
+fclean: clean oclean
+
+# Force recompilation of source files
+re: fclean all
